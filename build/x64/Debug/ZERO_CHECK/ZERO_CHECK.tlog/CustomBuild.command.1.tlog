@@ -1,0 +1,10 @@
+^C:\DEV\DEV\SIMD_PERF\BUILD\CMAKEFILES\438849BA4264D5802D0FBD519B1EB092\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/dev/dev/simd_perf -BC:/dev/dev/simd_perf/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/dev/dev/simd_perf/build/simd_perf.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
